@@ -65,14 +65,15 @@ function App() {
     <>
       <div className="flex justify-center items-center h-screen w-full bg-gray-400 ">
         <div className="flex justify-center items-center flex-col gap-2 bg-white p-2 rounded-2xl">
-          <div className="flex justify-between items-center w-full">
+          <h1 className='text-center font-medium bg-gray-800 rounded-2xl w-full text-white  text-3xl'>Calculator</h1>
+          <div className="flex justify-between items-center w-full gap-2">
             <input
               className="p-3 border w-full rounded-2xl"
               type="text"
               value={str}
               readOnly
             />
-            <Button value={"C"} className="w-sm"  onClick={() => setstr("")} />
+            <Button value={"C"} className="w-sm rounded-2xl"  onClick={() => setstr("")} />
           </div>
           <div className="flex justify-center w-full">
             <div className="grid grid-cols-3 w-full">
